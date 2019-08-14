@@ -5,12 +5,10 @@ import urllib.request
 import iterm2
 
 async def main(connection):
-    github_repo = None
-
     component = iterm2.StatusBarComponent(
         short_description='Bitcoin Price',
         detailed_description='Displays current price of Bitcoin',
-        exemplar='₿ $9,921.50',
+        exemplar='₿ Price: $9,921.50',
         update_cadence=15,
         identifier='schnogz.iterm-btc-components.btc-price',
         knobs=[],
@@ -18,21 +16,20 @@ async def main(connection):
 
     @iterm2.StatusBarRPC
     async def bitcoin_price_coroutine(knobs):
-        price_url = 'https://blockchain.info/ticker'
+        price_url = 'https://api.blockchair.com/bitcoin/stats'
 
         try:
             request = urllib.request.Request(
                 price_url,
                 headers={},
             )
-            price = json.loads(
+            price = format(json.loads(
                 urllib.request.urlopen(request).read().decode()
-            )['USD']['last']
-            formatted_price = format(price, ',')
+            )['data']['market_price_usd'], ',')
         except:
             raise
         else:
-            return f'₿ ${formatted_price}'
+            return f'₿ Price: ${price}'
 
     await component.async_register(connection, bitcoin_price_coroutine)
 

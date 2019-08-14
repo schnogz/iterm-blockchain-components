@@ -15,7 +15,12 @@ Custom Bitcoin (BTC) related status bar components for use with iTerm2
 ### Bitcoin Price
 ![btc_price](screenshots/btc_price.png)
 
-Shows the current Bitcoin price in USD.
+Displays the current Bitcoin price in USD. Updates every 15 seconds.
+
+### Bitcoin Mempool
+![mempool_size](screenshots/mempool_size.png)
+
+Display mempool unconfirmed transaction count and size in MB. Updates every minute.
 
 
 ## TODOs
