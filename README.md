@@ -1,4 +1,4 @@
-# iterm-btc-status-bar-components
+# iterm-crypto-status-bar-components
 Custom Bitcoin (BTC) related status bar components for use with iTerm2
 
 ![overview](screenshots/overview.png)
