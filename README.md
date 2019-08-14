@@ -16,3 +16,11 @@ Custom Bitcoin (BTC) related status bar components for use with iTerm2
 ![btc_price](screenshots/btc_price.png)
 
 Shows the current Bitcoin price in USD.
+
+
+## TODOs
+- [ ] Component: ETH Price
+- [ ] Component: LTC Price
+- [ ] Component: BTC Halvening countdown
+- [ ] Upgrade: BTC Price: Choose fiat currency
+- [ ] Upgrade: BTC Price: Show 24hr increase or decrease icon
