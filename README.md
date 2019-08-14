@@ -2,7 +2,8 @@
 Custom Bitcoin (BTC) related status bar components for use with iTerm2
 
 ## Installation
-
+1. Clone repo to desired location
+2.
 You can install the scripts to iTerm2's AutoLaunch folder with `./install.sh`.
 Select **Scripts > AutoLaunch** in the iTerm2 menu bar and select the scripts you want to be available as status bar components.
 You may be prompted to download the Python runtime.
