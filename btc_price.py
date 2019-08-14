@@ -11,14 +11,14 @@ async def main(connection):
         short_description='Bitcoin Price',
         detailed_description='Displays current price of Bitcoin',
         exemplar='₿ $9,921.50',
-        update_cadence=30,
+        update_cadence=15,
         identifier='schnogz.iterm-btc-components.btc-price',
         knobs=[],
     )
 
     @iterm2.StatusBarRPC
     async def bitcoin_price_coroutine(knobs):
-        price_url = 'https://api.blockchain.info/stats'
+        price_url = 'https://blockchain.info/ticker'
 
         try:
             request = urllib.request.Request(
@@ -27,7 +27,7 @@ async def main(connection):
             )
             price = json.loads(
                 urllib.request.urlopen(request).read().decode()
-            )['market_price_usd']
+            )['USD']['last']
             formatted_price = format(price, ',')
         except:
             raise
