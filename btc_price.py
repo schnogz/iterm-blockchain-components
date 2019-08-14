@@ -23,9 +23,9 @@ async def main(connection):
                 price_url,
                 headers={},
             )
-            price = format(json.loads(
+            price = format(round(json.loads(
                 urllib.request.urlopen(request).read().decode()
-            )['data']['market_price_usd'], ',')
+            )['data']['market_price_usd'], 2), ',')
         except:
             raise
         else:
