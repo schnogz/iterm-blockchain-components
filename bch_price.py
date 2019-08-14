@@ -6,17 +6,17 @@ import iterm2
 
 async def main(connection):
     component = iterm2.StatusBarComponent(
-        short_description='Bitcoin Price',
-        detailed_description='Displays current price of Bitcoin',
-        exemplar='BTC Price: $9,921.50',
+        short_description='Bitcoin Cash Price',
+        detailed_description='Displays current price of Bitcoin Cash',
+        exemplar='BCH Price: $321.50',
         update_cadence=15,
-        identifier='schnogz.iterm-crypto-components.btc-price',
+        identifier='schnogz.iterm-crypto-components.bch-price',
         knobs=[],
     )
 
     @iterm2.StatusBarRPC
-    async def bitcoin_price_coroutine(knobs):
-        price_url = 'https://api.blockchair.com/bitcoin/stats'
+    async def bitcoin_cash_price_coroutine(knobs):
+        price_url = 'https://api.blockchair.com/bitcoin-cash/stats'
 
         try:
             request = urllib.request.Request(
@@ -29,8 +29,8 @@ async def main(connection):
         except:
             raise
         else:
-            return f'BTC Price: ${price}'
+            return f'BCH Price: ${price}'
 
-    await component.async_register(connection, bitcoin_price_coroutine)
+    await component.async_register(connection, bitcoin_cash_price_coroutine)
 
 iterm2.run_forever(main)

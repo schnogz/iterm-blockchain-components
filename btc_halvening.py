@@ -9,9 +9,9 @@ async def main(connection):
     component = iterm2.StatusBarComponent(
         short_description='Bitcoin Havlening Stats',
         detailed_description='Displays BTC havlening completion percentage',
-        exemplar='₿ Halvening: 31,491 blocks (91.1943%%)',
+        exemplar='BTC Halvening: 31,491 blocks (91.1943%)',
         update_cadence=60*5,
-        identifier='schnogz.iterm-btc-components.btc-halvening',
+        identifier='schnogz.iterm-crypto-components.btc-halvening',
         knobs=[],
     )
 
@@ -40,7 +40,7 @@ async def main(connection):
         except:
             raise
         else:
-            return f'₿ Halvening: {remaining_blocks_formatted} blocks ({halvening_percentage}%)'
+            return f'BTC Halvening: {remaining_blocks_formatted} blocks ({halvening_percentage}%)'
 
     await component.async_register(connection, btc_halvening_coroutine)
 
