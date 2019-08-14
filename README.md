@@ -1,6 +1,8 @@
 # iterm-btc-status-bar-components
 Custom Bitcoin (BTC) related status bar components for use with iTerm2
 
+![overview](screenshots/overview.png)
+
 ## Installation & Configuration
 1. Clone repo to desired location
 2. Install scripts to iTerm2's AutoLaunch folder with via `bash ./install.sh`
@@ -23,7 +25,7 @@ Displays the current Bitcoin price in USD. Updates every 15 seconds.
 Displays the halvening completion percentage and the number of unmined blocks to be found before the halvening.  Updated every 5 minutes.
 
 ### Bitcoin Mempool
-![mempool_size](screenshots/btc_mempool'.png)
+![mempool_size](screenshots/btc_mempool.png)
 
 Display mempool unconfirmed transaction count and size in MB. Updates every minute.
 
