@@ -5,8 +5,6 @@ import urllib.request
 import iterm2
 
 async def main(connection):
-    github_repo = None
-
     component = iterm2.StatusBarComponent(
         short_description='Bitcoin Mempool Stats',
         detailed_description='Displays BTC mempool size and unconfirmed transactions count',

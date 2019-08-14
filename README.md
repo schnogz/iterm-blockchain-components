@@ -17,8 +17,13 @@ Custom Bitcoin (BTC) related status bar components for use with iTerm2
 
 Displays the current Bitcoin price in USD. Updates every 15 seconds.
 
+### Bitcoin Halvening Countdown
+![btc_halvening](screenshots/btc_halvening.png)
+
+Displays the halvening completion percentage and the number of unmined blocks to be found before the halvening.  Updated every 5 minutes.
+
 ### Bitcoin Mempool
-![mempool_size](screenshots/btc_mempool.png)
+![mempool_size](screenshots/btc_mempool'.png)
 
 Display mempool unconfirmed transaction count and size in MB. Updates every minute.
 
@@ -26,6 +31,5 @@ Display mempool unconfirmed transaction count and size in MB. Updates every minu
 ## TODOs
 - [ ] Component: ETH Price
 - [ ] Component: LTC Price
-- [ ] Component: BTC Halvening countdown
 - [ ] Upgrade: BTC Price: Choose fiat currency
 - [ ] Upgrade: BTC Price: Show 24hr increase or decrease icon
