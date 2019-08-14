@@ -14,4 +14,5 @@ Custom Bitcoin (BTC) related status bar components for use with iTerm2
 
 ### Bitcoin Price
 ![btc_price](screenshots/btc_price.png)
+
 Shows the current Bitcoin price in USD.
