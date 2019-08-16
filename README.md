@@ -25,16 +25,6 @@ Displays BTC, ETH, BCH and LTC prices in USD. Updates every 15 seconds.
 
 Displays the current Bitcoin price in USD. Updates every 15 seconds.
 
-### Bitcoin Halvening Countdown
-![btc_halvening](screenshots/btc_halvening.png)
-
-Displays the Bitcoin halvening completion percentage and the number of unmined blocks to be found before the halvening.  Updated every 5 minutes.
-
-### Bitcoin Mempool
-![mempool_size](screenshots/btc_mempool.png)
-
-Display Bitcoin mempool unconfirmed transaction count and size in MB. Updates every minute.
-
 ### Bitcoin Cash Price
 ![bch_price](screenshots/bch_price.png)
 
@@ -50,12 +40,23 @@ Displays the current Ethereum price in USD. Updates every 15 seconds.
 
 Displays the current Litecoin price in USD. Updates every 15 seconds.
 
+### Bitcoin Halvening Countdown
+![btc_halvening](screenshots/btc_halvening.png)
+
+Displays the Bitcoin halvening completion percentage and the number of unmined blocks to be found before the halvening.  Updated every 5 minutes.
+
+### Bitcoin Mempool
+![mempool_size](screenshots/btc_mempool.png)
+
+Display Bitcoin mempool unconfirmed transaction count and size in MB. Updates every minute.
+
+
 ## Contribute
 Bug reports/fixes, feature requests and feedback is welcomed.
 
 ## Donate
 Find these components fun and/or useful? Donations are also fun 🤓
 
-BTC: `1MoWaXULg56CFR82hKfRPvNLPVqWAdL7m6`
-ETH: `0x2C015C09C4ce9eEbC4ff1F9BbdD189e0f05b922f`
-BCH: Thanks but you can keep your 💩coin  
+* **BTC**: `1MoWaXULg56CFR82hKfRPvNLPVqWAdL7m6`
+* **ETH**: `0x2C015C09C4ce9eEbC4ff1F9BbdD189e0f05b922f`
+* **BCH**: Thanks but you can keep your 💩coin 
