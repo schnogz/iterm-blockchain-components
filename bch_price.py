@@ -9,7 +9,7 @@ async def main(connection):
         short_description='Bitcoin Cash Price',
         detailed_description='Displays current price of Bitcoin Cash',
         exemplar='BCH Price: $321.50',
-        update_cadence=15,
+        update_cadence=30,
         identifier='schnogz.iterm-crypto-components.bch-price',
         knobs=[],
     )

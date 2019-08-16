@@ -18,37 +18,37 @@ Custom crypto related status bar components for use with iTerm2.
 ### Market Prices
 ![market_prices](screenshots/market_prices.png)
 
-Displays BTC, ETH, BCH and LTC prices in USD. Updates every 15 seconds.
+Displays BTC, ETH, BCH and LTC prices in USD. Updates every 30 seconds.
 
 ### Bitcoin Price
 ![btc_price](screenshots/btc_price.png)
 
-Displays the current Bitcoin price in USD. Updates every 15 seconds.
+Displays the current Bitcoin price in USD. Updates every 30 seconds.
 
 ### Bitcoin Cash Price
 ![bch_price](screenshots/bch_price.png)
 
-Displays the current Bitcoin Cash price in USD. Updates every 15 seconds.
+Displays the current Bitcoin Cash price in USD. Updates every 30 seconds.
 
 ### Ethereum Price
 ![eth_price](screenshots/eth_price.png)
 
-Displays the current Ethereum price in USD. Updates every 15 seconds.
+Displays the current Ethereum price in USD. Updates every 30 seconds.
 
 ### Litecoin Price
 ![ltc_price](screenshots/ltc_price.png)
 
-Displays the current Litecoin price in USD. Updates every 15 seconds.
+Displays the current Litecoin price in USD. Updates every 30 seconds.
 
 ### Bitcoin Halvening Countdown
 ![btc_halvening](screenshots/btc_halvening.png)
 
-Displays the Bitcoin halvening completion percentage and the number of unmined blocks to be found before the halvening.  Updated every 5 minutes.
+Displays the Bitcoin halvening completion percentage and the number of unmined blocks to be found before the halvening.  Updates every 5 minutes.
 
 ### Bitcoin Mempool
 ![mempool_size](screenshots/btc_mempool.png)
 
-Display Bitcoin mempool unconfirmed transaction count and size in MB. Updates every minute.
+Display Bitcoin mempool unconfirmed transaction count and size in MB. Updates every 60 seconds.
 
 
 ## Contribute
@@ -59,4 +59,4 @@ Find these components fun and/or useful? Donations are also fun 🤓
 
 * **BTC**: `1MoWaXULg56CFR82hKfRPvNLPVqWAdL7m6`
 * **ETH**: `0x2C015C09C4ce9eEbC4ff1F9BbdD189e0f05b922f`
-* **BCH**: Thanks but you can keep your 💩coin 
+* **BCH**: Thanks but you can keep your 💩coin

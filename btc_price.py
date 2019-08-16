@@ -9,7 +9,7 @@ async def main(connection):
         short_description='Bitcoin Price',
         detailed_description='Displays current price of Bitcoin',
         exemplar='BTC Price: $9,921.50',
-        update_cadence=15,
+        update_cadence=30,
         identifier='schnogz.iterm-crypto-components.btc-price',
         knobs=[],
     )
