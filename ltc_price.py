@@ -9,7 +9,7 @@ async def main(connection):
         short_description='Litecoin Price',
         detailed_description='Displays current price of Litecoin',
         exemplar='LTC Price: $121.50',
-        update_cadence=15,
+        update_cadence=30,
         identifier='schnogz.iterm-crypto-components.ltc-price',
         knobs=[],
     )

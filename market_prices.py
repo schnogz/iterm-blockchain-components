@@ -9,7 +9,7 @@ async def main(connection):
         short_description='Market Prices',
         detailed_description='Displays current prices of BTC, ETH, BCH and LTC',
         exemplar='BTC $10,321.50, ETH $321.42, BCH $471.03, LTC $104.53',
-        update_cadence=15,
+        update_cadence=30,
         identifier='schnogz.iterm-crypto-components.bch-price',
         knobs=[],
     )
