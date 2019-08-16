@@ -49,3 +49,13 @@ Displays the current Ethereum price in USD. Updates every 15 seconds.
 ![ltc_price](screenshots/ltc_price.png)
 
 Displays the current Litecoin price in USD. Updates every 15 seconds.
+
+## Contribute
+Bug reports/fixes, feature requests and feedback is welcomed.
+
+## Donate
+Find these components fun and/or useful? Donations are also fun 🤓
+
+BTC: `1MoWaXULg56CFR82hKfRPvNLPVqWAdL7m6`
+ETH: `0x2C015C09C4ce9eEbC4ff1F9BbdD189e0f05b922f`
+BCH: Thanks but you can keep your 💩coin  
