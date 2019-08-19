@@ -5,8 +5,8 @@ Custom crypto related status bar components for use with iTerm2.
 
 ## Installation & Configuration
 1. Clone repo to desired location.
-2. Install scripts to iTerm2's AutoLaunch folder with via `bash ./install.sh`.
-3. Close and relaunch iTerm.
+2. From project root, install components to iTerm2's AutoLaunch folder automagically via `bash ./install.sh`.
+3. Completely quit and then reopen iTerm2.
 4. Follow [the instructions for using status bar components](https://www.iterm2.com/3.3/documentation-status-bar.html) and drag them where you like.
 
 **Notes**
