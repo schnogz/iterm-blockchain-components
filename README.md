@@ -59,4 +59,4 @@ Find these components fun and/or useful? Donations are also fun 🤓
 
 * **BTC**: `1MoWaXULg56CFR82hKfRPvNLPVqWAdL7m6`
 * **ETH**: `0x2C015C09C4ce9eEbC4ff1F9BbdD189e0f05b922f`
-* **BCH**: Thanks but you can keep your 💩coin
+* **BCH**: `qzj24j0u2mt9xqwxynjyjgwwrv6c603jtv7v6guyxn`
