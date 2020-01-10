@@ -1,7 +1,7 @@
 import asyncio
 import json
 import urllib.request
-
+import ssl
 import iterm2
 
 async def main(connection):
@@ -19,12 +19,13 @@ async def main(connection):
         stats_url = 'https://api.blockchair.com/bitcoin/stats'
 
         try:
+            context = ssl._create_unverified_context()
             request = urllib.request.Request(
                 stats_url,
                 headers={},
             )
             stats = json.loads(
-                urllib.request.urlopen(request).read().decode()
+                urllib.request.urlopen(request, context=context).read().decode()
             )
             unconfirmed_tx_count = format(stats['data']['mempool_transactions'], ',')
             mempool_size = round(stats['data']['mempool_size']/1000000, 2)

@@ -1,7 +1,7 @@
 import asyncio
 import json
 import urllib.request
-
+import ssl
 import iterm2
 
 async def main(connection):
@@ -19,12 +19,13 @@ async def main(connection):
         price_url = 'https://api.blockchair.com/stats'
 
         try:
+            context = ssl._create_unverified_context()
             request = urllib.request.Request(
                 price_url,
                 headers={},
             )
             resp = json.loads(
-                urllib.request.urlopen(request).read().decode()
+                urllib.request.urlopen(request, context=context).read().decode()
             )['data']
             btc_price = format(round(resp['bitcoin']['data']['market_price_usd'], 2), ',')
             eth_price = format(round(resp['ethereum']['data']['market_price_usd'], 2), ',')
