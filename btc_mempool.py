@@ -8,7 +8,7 @@ async def main(connection):
     component = iterm2.StatusBarComponent(
         short_description='Bitcoin Mempool Stats',
         detailed_description='Displays BTC mempool size and unconfirmed transactions count',
-        exemplar='BTC Mempool: 4,239 unconfirmed txs @ 1.03 MB',
+        exemplar='BTC Mempool 4,239 txs @ 1.03 MB',
         update_cadence=60,
         identifier='schnogz.iterm-crypto-components.btc-mempool',
         knobs=[],
@@ -32,7 +32,7 @@ async def main(connection):
         except:
             raise
         else:
-            return f'BTC Mempool: {unconfirmed_tx_count} unconfirmed txs @ {mempool_size} MB'
+            return f'BTC Mempool {unconfirmed_tx_count} txs @ {mempool_size} MB'
 
     await component.async_register(connection, btc_mempool_coroutine)
 

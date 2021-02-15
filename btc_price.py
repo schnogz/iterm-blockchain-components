@@ -8,7 +8,7 @@ async def main(connection):
     component = iterm2.StatusBarComponent(
         short_description='Bitcoin Price',
         detailed_description='Displays current price of Bitcoin',
-        exemplar='BTC Price: $9,921.50',
+        exemplar='BTC $9,921.50',
         update_cadence=30,
         identifier='schnogz.iterm-crypto-components.btc-price',
         knobs=[],
@@ -30,7 +30,7 @@ async def main(connection):
         except:
             raise
         else:
-            return f'BTC Price: ${price}'
+            return f'BTC ${price}'
 
     await component.async_register(connection, bitcoin_price_coroutine)
 

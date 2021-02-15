@@ -8,7 +8,7 @@ async def main(connection):
     component = iterm2.StatusBarComponent(
         short_description='Ethereum Price',
         detailed_description='Displays current price of Ethereum',
-        exemplar='ETH Price: $321.50',
+        exemplar='ETH $321.50',
         update_cadence=30,
         identifier='schnogz.iterm-crypto-components.eth-price',
         knobs=[],
@@ -30,7 +30,7 @@ async def main(connection):
         except:
             raise
         else:
-            return f'ETH Price: ${price}'
+            return f'ETH ${price}'
 
     await component.async_register(connection, ethereum_price_coroutine)
 

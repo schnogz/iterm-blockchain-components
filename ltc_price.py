@@ -8,7 +8,7 @@ async def main(connection):
     component = iterm2.StatusBarComponent(
         short_description='Litecoin Price',
         detailed_description='Displays current price of Litecoin',
-        exemplar='LTC Price: $121.50',
+        exemplar='LTC $121.50',
         update_cadence=30,
         identifier='schnogz.iterm-crypto-components.ltc-price',
         knobs=[],
@@ -30,7 +30,7 @@ async def main(connection):
         except:
             raise
         else:
-            return f'LTC Price: ${price}'
+            return f'LTC ${price}'
 
     await component.async_register(connection, litecoin_price_coroutine)
 
