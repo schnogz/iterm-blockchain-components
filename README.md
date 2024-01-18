@@ -5,11 +5,10 @@ Custom crypto related status bar components for use with iTerm2.
 
 ## Installation & Configuration
 1. Open iTerm > Preferences > General > Magic and enable "Python API" allowing "all apps to connect".
-2. Close and reopen iTerm and it should install Python runtimes
-3. Clone this repo to desired location.
-4. From project root, install components to iTerm2's AutoLaunch folder automagically via `bash ./install.sh`.
-5. Completely quit and then reopen iTerm2.
-6. Follow [the instructions for using status bar components](https://www.iterm2.com/3.3/documentation-status-bar.html) and drag them where you like.
+2. Clone this repo to desired location.
+3. From project root, install components to iTerm2's AutoLaunch folder automagically via `bash ./install.sh`.
+4. Completely quit and then reopen iTerm2. It should now install Python runtimes
+5. Follow [the instructions for using status bar components](https://www.iterm2.com/3.3/documentation-status-bar.html) and drag them where you like.
 
 **Notes**
 1. You may be prompted to download, configure and activate the Python runtime for iTerm.
