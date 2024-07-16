@@ -1,7 +1,7 @@
 # iterm-crypto-status-bar-components
 Custom crypto related status bar components for use with iTerm2.
 
-![overview](screenshots/overview.png)
+![overview](screenshots/overview2.png)
 
 ## Installation & Configuration
 1. Open iTerm > Preferences > General > Magic and enable "Python API" allowing "all apps to connect".
